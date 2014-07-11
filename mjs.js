@@ -5006,14 +5006,14 @@ function MatrixTable(sname, irows, icols, mtype, container) {
       for (j = 0; j < this.cols; j++) {
         tableHTML += '<td>';
         // data-allow-minus - users are often trying to input "-" instead of "-1" for SLU
-        tableHTML += '<input type="tel" class="MatrixTableInput" data-id="' + this.name + "~" + i + "~" + j + '" value="' + (mtype === 3 ? '0' : (elements && elements[i] ? Utils.escapeHTML(elements[i][j] || '') : '')) + '" ' + (mtype === 1 ? ' data-allow-minus="1" ' : '') + ' />';
+        tableHTML += '<input type="tel" class="topcoat-text-input ng-isolate-scope ng-pristine ng-valid MatrixTableInput" data-id="' + this.name + "~" + i + "~" + j + '" value="' + (mtype === 3 ? '0' : (elements && elements[i] ? Utils.escapeHTML(elements[i][j] || '') : '')) + '" ' + (mtype === 1 ? ' data-allow-minus="1" ' : '') + ' />';
         tableHTML += (mtype === 1 ? (j < this.cols - 1 ? 'x<sub>' + (j + 1) + '</sub>' : '') + (j===this.cols-1? '&nbsp;' : (j === this.cols - 2 ? '=' : '+')) :'')+(mtype===3?(j<this.cols-1?'x<sup>'+(j<this.cols-2?this.cols-j-1:'.')+'</sup>+':'=0<sup>.</sup>'):'')+(mtype===2?'.<sub>.':'');
         tableHTML += '</td>';
       }
       tableHTML += '</tr>';
     }
     tableHTML += '</table>';
-    tableHTML += '<textarea inputmode="numeric"></textarea>';
+    tableHTML += '<textarea type="tel" class="topcoat-textarea ng-pristine ng-valid"></textarea>';
 
     st += tableHTML;
     st += '</div>';
