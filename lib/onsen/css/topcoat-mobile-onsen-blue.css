@@ -1102,7 +1102,6 @@ input[type="checkbox"]:disabled:active + .topcoat-checkbox__checkmark:before {
   padding: 11px;
   margin: 0;
   border-top: none;
-  border-bottom: 1px solid #b3b3b3;
   color: #666;
   background-color: transparent;
 }
@@ -1320,12 +1319,12 @@ input[type="checkbox"]:disabled:active + .topcoat-checkbox__checkmark:before {
 */
 
 .page {
-  background-color: #f5f0e8;
+  background-color: #ffffff;
   font-weight: 200;
 }
 
 .topcoat-page__bg {
-  background-color: #f5f0e8;
+  background-color: #ffffff;
 }
 
 /* topdoc

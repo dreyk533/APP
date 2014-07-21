@@ -1,31 +1,40 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="es" ng-app="myApp">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>My App</title>  
+  <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>M.</title>  
   
   <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
   <link rel="stylesheet" type="text/css" href="lib/onsen/css/topcoat-mobile-onsen-blue.css">
   <link rel="stylesheet" href="styles/app.css"/> 
-
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <script src="lib/onsen/js/angular/angular.js"></script>    
   <script src="lib/onsen/js/onsenui.js"></script>    
   <script src="js/app.js"></script> 
     
   <link href="mcss.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="mjs.js"></script>
+<!-- <script type="text/javascript" src="cordova.js"></script>
+ --><script type="text/javascript" src="mjs.js"></script>
+ <style>
+ body {
+font-family: Lato';
+font-size: 20px;
+}
+div {
+font-family: Lato';
+}
+ </style>
 </head>
 
 <body>    
   
   <ons-screen>
-
     <ons-sliding-menu 
       behind-page="menu.html" 
       above-page="navigator1.html">
     </ons-sliding-menu>
   </ons-screen>
+  <div id="dropShadow"></div>
 </body>
 </html>

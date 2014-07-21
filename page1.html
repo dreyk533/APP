@@ -1,3 +1,73 @@
-<ons-page class="center">
-<h1>Page 1</h1>
+ <ons-page class="center">
+<ons-scroller class="center">
+ <link href="mcss.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="mjs.js"></script>
+  <h1>Resolver matriz</h1>
+<ons-button class="expression" data-expression="A * B" title="Multiplicación">A<span class="operator">*</span>B</ons-button>
+<ons-button class="expression" data-expression="A * B" title="Multiplicación">A<span class="operator">*</span>B</ons-button>
+<ons-button class="expression" data-expression="A + B" title="Adición">A<span class="operator">+</span>B</ons-button>
+<ons-button class="expression" data-expression="A - B" title="Sustracción">A<span class="operator">-</span>B</ons-button>
+<br>
+<br>
+Matriz A:<br />
+<div class="insertTable" data-id="a" data-sizes="3x3" dropzone="copy string:text/plain" title="Matriz A"></div>
+<!-- <div class="bbox">
+<button type="button" class="expression" data-expression="determinant A">Determinante</button><span></span><!--
+<button type="button" class="expression" data-expression="A^-1">Matriz Inversa</button><span></span><!--
+<button type="button" class="expression" data-expression="transpose A">Matriz Transpuesta</button><span></span><!--
+<button type="button" class="expression" data-expression="rank A">Rango</button><span></span><!--
+<span class="buttonBeforeInput"><button type="button" class="expression" data-expression="k * A">Multiplicar por</button><input type="text" inputmode="numeric" class="fraction-input" value="2" /></span><span></span><!--
+<button type="button" class="MatrToTriag" data-for="a">Matriz Triangular</button><span></span><!--
+<button type="button" class="diagonalize" data-for="a">Matriz Diagonal</button><span></span><!--
+<span class="buttonBeforeInput"><button type="button" class="expression" data-expression="A ^ k">Matriz elevada a</button><input type="text" inputmode="numeric" class="fraction-input" value="2" /></span><span></span>
+</div> -->
+</td>
+<br>
+<td class="tdmatrix">
+Matriz B:<br />
+<div class="insertTable" data-id="b" data-sizes="3x3" dropzone="copy string:text/plain" title="Matriz B"></div>
+<div class="bbox">
+<!-- <button type="button" class="expression" data-expression="determinant B">Determinante</button><!--
+<button type="button" class="expression" data-expression="B^-1">Matriz Inversa</button><!--
+<button type="button" class="expression" data-expression="transpose B">Matriz Transpuesta</button><!--
+<button type="button" class="expression" data-expression="rank B">Rango</button><!--
+<span class="buttonBeforeInput"><button type="button" class="expression" data-expression="k * B">Multiplicar por</button><input type="text" inputmode="numeric" class="fraction-input" value="2" /></span><!--
+<button type="button" class="MatrToTriag" data-for="b">Matriz Triangular</button><!--
+<button type="button" class="diagonalize" data-for="b">Matriz Diagonal</button><!--
+<span class="buttonBeforeInput"><button type="button" class="expression" data-expression="B ^ k">Matriz elevada a</button><input type="text" inputmode="numeric" class="fraction-input" value="2" /></span><span></span>
+</div> -->
+</td>
+</tr>
+<tr><td class="bbox">
+</td>
+<td class="bbox">
+</td></tr>
+</table>
+<!-- <div class="bbox2"><span class="buttonAfterInput"><datalist id="expressions-list" class="display-none">
+<option></option>
+<option>determinant(A)</option>
+<option>A^-1</option>
+<option>transpose(A)</option>
+<option>rank(A)</option>
+<option>determinant(B)</option>
+<option>B^-1</option>
+<option>transpose(B)</option>
+<option>rank(B)</option>
+<option>A*B</option>
+<option>A+B</option>
+<option>A-B</option>
+</datalist><input type="text" inputmode="verbatim" class="monospace" value="1*A+2*B" list="expressions-list" /><button type="button" class="expression"><span class="operator">=</span></button></span></div> -->
+<!--
+<table><tr><td></td>
+<td class="right">
+</td>
+</tr></table>
+-->
+<table class="line"><tr><td><!--
+-->
+</td>
+<td class="right"><ons-button class="slide-left effeckt-button topcoat-button no-select slide-left effeckt-button topcoat-button no-select topcoat-button-- ClearAll">limpiar</ons-button></td>
+</tr></table>
+<div id="resdiv"></div>
+  </ons-scroller>
 </ons-page>
