@@ -1,68 +1,124 @@
 <ons-page style="background-color: white">
-
+<ons-scroller>
 	<ul class="topcoat-list">
 
 		<ons-list-item
 			class="topcoat-list__item--tappable topcoat-list__item__line-height" 
 			ng-click="ons.slidingMenu.toggleMenu(); 
-			ons.slidingMenu.setAbovePage('navigator1.html')">
-			<i class="fa fa-home fa-lg" style="color: #666"></i>
+			ons.slidingMenu.setAbovePage('navigator2.html')">
+			<i class="" style="color: #666"></i>
 			&nbsp; Inicio
 		</ons-list-item>
 <ons-list-item 
 			class="topcoat-list__item--tappable topcoat-list__item__line-height"
 			ng-click="ons.slidingMenu.toggleMenu(); 
 			ons.slidingMenu.setAbovePage('navigator2.html')">
-			<i class="fa fa-graduation-cap fa-lg" style="color: #666"></i>
+			<i class="" style="color: #666"></i>
 			&nbsp; Matrices
 		</ons-list-item>
 		<ons-list-item 
 			class="topcoat-list__item--tappable topcoat-list__item__line-height"
 			ng-click="ons.slidingMenu.toggleMenu(); 
-			ons.slidingMenu.setAbovePage('navigator2.html')">
-			<i class="fa fa-graduation-cap fa-lg" style="color: #666"></i>
-			&nbsp; Sistemas de ecuaciones
+			ons.slidingMenu.setAbovePage('navigator3.html')">
+			<i class="" style="color: #666"></i>
+			&nbsp; Tipos
 		</ons-list-item>
-		<ons-list-item 
-			class="topcoat-list__item--tappable topcoat-list__item__line-height"
+		<ons-list-item data-expression="A + B"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
 			ng-click="ons.slidingMenu.toggleMenu(); 
-			ons.slidingMenu.setAbovePage('navigator2.html')">
-			<i class="fa fa-plus fa-lg" style="color: #666"></i>
+			ons.slidingMenu.setAbovePage('navigator1.html')">
+			<i class="" style="color: #666"></i>
 			&nbsp; A+B
 		</ons-list-item>
-		<ons-list-item 
-			class="topcoat-list__item--tappable topcoat-list__item__line-height"
+		<ons-list-item data-expression="A - B"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
 			ng-click="ons.slidingMenu.toggleMenu(); 
-			ons.slidingMenu.setAbovePage('navigator2.html')">
-			<i class="fa fa-minus fa-lg" style="color: #666"></i>
+			ons.slidingMenu.setAbovePage('navigator1.html')">
+			<i class="" style="color: #666"></i>
 			&nbsp; A-B
 		</ons-list-item>
-		<ons-list-item 
-			class="topcoat-list__item--tappable topcoat-list__item__line-height"
+		<ons-list-item data-expression="A * B"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
 			ng-click="ons.slidingMenu.toggleMenu(); 
-			ons.slidingMenu.setAbovePage('navigator2.html')">
-			<i class="fa fa-asterisk fa-lg" style="color: #666"></i>
-			&nbsp; A*B
+			ons.slidingMenu.setAbovePage('navigator1.html')">
+			<i class="" style="color: #666"></i>
+			&nbsp; A*B<span class="operator"></span>
 		</ons-list-item>
-		<ons-list-item 
-			class="topcoat-list__item--tappable topcoat-list__item__line-height"
+		<ons-list-item data-expression="determinant A"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
 			ng-click="ons.slidingMenu.toggleMenu(); 
 			ons.slidingMenu.setAbovePage('navigator2.html')">
-			<i class="fa fa-search fa-lg" style="color: #666"></i>
-			&nbsp; Metodos
+			<i class="" style="color: #666"></i>
+			&nbsp; Determinante A
 		</ons-list-item>
-		<ons-list-item 
-			class="topcoat-list__item--tappable topcoat-list__item__line-height"
+		<ons-list-item data-expression="determinant B"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
 			ng-click="ons.slidingMenu.toggleMenu(); 
 			ons.slidingMenu.setAbovePage('navigator2.html')">
-			<i class="fa fa-search fa-lg" style="color: #666"></i>
-			&nbsp; Propiedades
+			<i class="" style="color: #666"></i>
+			&nbsp; Determinante B
+		</ons-list-item>
+		<ons-list-item data-expression="A^-1"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
+			ng-click="ons.slidingMenu.toggleMenu(); 
+			ons.slidingMenu.setAbovePage('navigator2.html')">
+			<i class="" style="color: #666"></i>
+			&nbsp; Matriz Inversa A
+		</ons-list-item>
+		<ons-list-item data-expression="B^-1"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
+			ng-click="ons.slidingMenu.toggleMenu(); 
+			ons.slidingMenu.setAbovePage('navigator2.html')">
+			<i class="" style="color: #666"></i>
+			&nbsp; Matriz Inversa B
+		</ons-list-item>
+		<ons-list-item data-expression="rank A"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
+			ng-click="ons.slidingMenu.toggleMenu(); 
+			ons.slidingMenu.setAbovePage('navigator2.html')">
+			<i class="" style="color: #666"></i>
+			&nbsp; Rango A
+		</ons-list-item>
+		<ons-list-item data-expression="rank B"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
+			ng-click="ons.slidingMenu.toggleMenu(); 
+			ons.slidingMenu.setAbovePage('navigator2.html')">
+			<i class="" style="color: #666"></i>
+			&nbsp; Rango B
+		</ons-list-item>
+		<ons-list-item data-expression="transpose A"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
+			ng-click="ons.slidingMenu.toggleMenu(); 
+			ons.slidingMenu.setAbovePage('navigator2.html')">
+			<i class="" style="color: #666"></i>
+			&nbsp; Transpuesta A
+		</ons-list-item>
+		<ons-list-item data-expression="transpose B"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
+			ng-click="ons.slidingMenu.toggleMenu(); 
+			ons.slidingMenu.setAbovePage('navigator2.html')">
+			<i class="" style="color: #666"></i>
+			&nbsp; Transpuesta B
+		</ons-list-item>
+		<ons-list-item data-for="a"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height MatrToTriag"
+			ng-click="ons.slidingMenu.toggleMenu(); 
+			ons.slidingMenu.setAbovePage('navigator2.html')">
+			<i class="" style="color: #666"></i>
+			&nbsp; Matriz Triangular A
+		</ons-list-item>
+				<ons-list-item data-for="b"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height MatrToTriag"
+			ng-click="ons.slidingMenu.toggleMenu(); 
+			ons.slidingMenu.setAbovePage('navigator2.html')">
+			<i class="" style="color: #666"></i>
+			&nbsp; Matriz Triangular B
 		</ons-list-item>
 				<ons-list-item 
-			class="topcoat-list__item--tappable topcoat-list__item__line-height"
+			class="topcoat-list__item--tappable topcoat-list__item__line-height expression"
 			ng-click="ons.slidingMenu.toggleMenu(); 
 			ons.slidingMenu.setAbovePage('navigator2.html')">
-			<i class="fa fa-plus-circle fa-lg" style="color: #666"></i>
+			<i class="" style="color: #666"></i>
 			&nbsp; Registro
 		</ons-list-item>
 			</ons-list-item>
@@ -70,12 +126,12 @@
 			class="topcoat-list__item--tappable topcoat-list__item__line-height"
 			ng-click="ons.slidingMenu.toggleMenu(); 
 			ons.slidingMenu.setAbovePage('navigator2.html')">
-			<i class="fa fa-pencil-square-o fa-lg" style="color: #666"></i>
+			<i class="" style="color: #666"></i>
 			&nbsp; Contacto
 		</ons-list-item>
 		
 		
 
 	</ul>
-
+  </ons-scroller>
 </ons-page>
